@@ -32,9 +32,9 @@ export default function RootLayout({
         <SidebarProvider>
           {" "}
           <AppSidebar />
-          <main className="p-2">
+          <main className="pl-2 pr-6 w-full">
             <SidebarTrigger />
-            {children}
+            <div className="max-w-[1400px]">{children}</div>
           </main>
         </SidebarProvider>
       </body>
